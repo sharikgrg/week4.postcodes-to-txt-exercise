@@ -1,11 +1,10 @@
 import requests
+import json
 def importing_functions(postcode):
     request_postcode = requests.get('http://api.postcodes.io/postcodes/' + postcode)
     retrieving_data = request_postcode.json()
-    postcode = retrieving_data['result']['postcode']
-    longitude = retrieving_data['result']['longitude']
-    latitude = retrieving_data['result']['latitude']
-    print(postcode, longitude, latitude)
+    postcode = json.dumps(retrieving_data['result']['postcode'])
+    print(postcode)
 
 def append_to_file(file, postcode):
     try:
