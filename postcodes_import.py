@@ -1,5 +1,5 @@
 import requests
-
+# this is the code I did in the HW from my previous session with .json
 request_postcode = requests.get('http://api.postcodes.io/postcodes/' + 'TN234QY')
 
 retrieving_data = request_postcode.json()
