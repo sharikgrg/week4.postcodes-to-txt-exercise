@@ -15,4 +15,4 @@ specifications:
 - funcction that write
 = Handle one error
     - What happens if you input an invalid URL?
-    
+- Good conventions - Naming and file organisation/structure
