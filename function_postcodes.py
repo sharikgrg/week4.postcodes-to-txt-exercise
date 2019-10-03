@@ -7,7 +7,7 @@ def importing_functions(postcode):
     request_postcode = requests.get('http://api.postcodes.io/postcodes/' + postcode)
     retrieving_data = request_postcode.json()
     postcode = json.dumps(retrieving_data['result']['postcode'])
-    print(postcode)
+    return str(postcode)
 
 
 # to add the data into the .txt file.
